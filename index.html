@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en" data-theme="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ══════════════════════════════════════════════════════════════
+     PERSONALIZE: replace every "Your Name" / example.com below.
+     Search the file for the word PERSONALIZE to find each spot.
+     ══════════════════════════════════════════════════════════════ -->
+
+<title>Your Name — Software Engineer &amp; Portfolio</title>
+<meta name="description" content="Portfolio of Your Name — a software engineer building fast, accessible products for the web. Selected projects, experience and contact details.">
+<meta name="author" content="Your Name">
+<link rel="canonical" href="https://aganderek-eng.github.io/krnes/">
+
+<!-- Open Graph / social previews -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Your Name — Software Engineer">
+<meta property="og:description" content="Selected work, experience and contact details.">
+<meta property="og:url" content="https://aganderek-eng.github.io/krnes/">
+<!-- PERSONALIZE: add a 1200x630 preview image, then uncomment:
+<meta property="og:image" content="https://aganderek-eng.github.io/krnes/assets/img/og-image.png"> -->
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#b4531f">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400..700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<!-- Apply the saved theme before first paint so the page never flashes -->
+<script>
+  (function () {
+    // Marks the page as JS-capable so scroll-reveal styles apply. Without this
+    // class every section renders visible, which is the safe default.
+    document.documentElement.classList.add("js");
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+    } catch (e) { /* storage blocked — fall back to the system preference */ }
+  })();
+</script>
+
+<!-- Structured data helps search engines show your name and links -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Your Name",
+  "url": "https://aganderek-eng.github.io/krnes/",
+  "jobTitle": "Software Engineer",
+  "email": "mailto:you@example.com",
+  "sameAs": [
+    "https://github.com/yourhandle",
+    "https://www.linkedin.com/in/yourhandle"
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ══════════════ Header ══════════════ -->
+<header class="site-header" id="header">
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="Home">
+      <!-- PERSONALIZE: your initials -->
+      <span class="brand__mark" aria-hidden="true">YN</span>
+      <span>Your Name</span>
+    </a>
+
+    <nav id="primary-nav" aria-label="Primary">
+      <ul class="nav__links" id="nav-links">
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#skills">Skills</a></li>
+        <li><a class="nav__link" href="#work">Work</a></li>
+        <li><a class="nav__link" href="#experience">Experience</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="icon-btn theme-toggle" id="theme-toggle" type="button"
+              aria-label="Switch colour theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+        </svg>
+      </button>
+
+      <button class="icon-btn nav__toggle" id="nav-toggle" type="button"
+              aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ══════════════ Hero ══════════════ -->
+  <section class="hero" id="top">
+    <div class="container hero__grid">
+      <div>
+        <p class="hero__status">
+          <span class="status-dot" aria-hidden="true"></span>
+          Available for new work
+        </p>
+
+        <!-- PERSONALIZE: headline -->
+        <h1 class="hero__title">Hi, I'm Your Name.<br>I build <em>thoughtful</em> software.</h1>
+
+        <p class="hero__lead">
+          A software engineer focused on fast, accessible products for the web.
+          I care about the details users feel: quick loads, clear interfaces and
+          code that stays readable a year later.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#work">
+            View my work
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6"></path>
+            </svg>
+          </a>
+          <!-- PERSONALIZE: drop your CV at assets/resume.pdf -->
+          <a class="btn btn--ghost" id="cv-link" href="assets/resume.pdf" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3v12M7 11l5 5 5-5M5 21h14"></path>
+            </svg>
+            Download CV
+          </a>
+        </div>
+
+        <!-- PERSONALIZE: social links -->
+        <ul class="social">
+          <li><a href="https://github.com/yourhandle" aria-label="GitHub" rel="me noopener" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.72-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.13-.3-.54-1.53.11-3.18 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.23 0 4.63-2.8 5.65-5.48 5.95.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .5z"/></svg>
+          </a></li>
+          <li><a href="https://www.linkedin.com/in/yourhandle" aria-label="LinkedIn" rel="me noopener" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.76-1.95C20.6 8.75 22 11.1 22 15.1V21h-4v-5.2c0-1.24-.02-2.84-1.9-2.84-1.9 0-2.2 1.35-2.2 2.75V21H9z"/></svg>
+          </a></li>
+          <li><a href="https://x.com/yourhandle" aria-label="X" rel="me noopener" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.65l-5.22-6.82-5.97 6.82H1.66l7.73-8.84L1.25 2.25h6.82l4.71 6.23zm-1.16 17.52h1.83L7.01 4.13H5.05z"/></svg>
+          </a></li>
+          <li><a href="mailto:you@example.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2.5" y="4.5" width="19" height="15" rx="2.5"></rect>
+              <path d="m3 7 9 6 9-6"></path>
+            </svg>
+          </a></li>
+        </ul>
+      </div>
+
+      <div class="hero__portrait">
+        <!-- PERSONALIZE: save a photo as assets/img/portrait.jpg.
+             Until then this initials card shows instead. -->
+        <div class="portrait-fallback" aria-hidden="true">YN</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ About ══════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <p class="eyebrow">01 — About</p>
+          <h2 class="section__title">A little background</h2>
+        </div>
+      </div>
+
+      <div class="about__grid">
+        <div class="prose reveal">
+          <!-- PERSONALIZE: your story, in your voice -->
+          <p>
+            I'm a software engineer with <strong>five years</strong> of experience turning
+            fuzzy problems into products people actually use. Most of my work sits where
+            interface design meets systems thinking — the part where a good decision early
+            saves a hundred small ones later.
+          </p>
+          <p>
+            I started out writing internal tools, which taught me that the best software
+            disappears: it does the job, then gets out of the way. These days I work mostly
+            in <strong>TypeScript and Python</strong>, and I have a soft spot for performance
+            work and for making things usable with a keyboard and a screen reader.
+          </p>
+          <p>
+            Outside of work you'll find me reading, running slowly, and maintaining a few
+            small open-source projects. I'm always happy to talk about a problem worth solving.
+          </p>
+        </div>
+
+        <div class="facts reveal">
+          <!-- PERSONALIZE: quick facts -->
+          <div class="fact">
+            <span class="fact__label">Based in</span>
+            <span class="fact__value">City, Country</span>
+          </div>
+          <div class="fact">
+            <span class="fact__label">Focus</span>
+            <span class="fact__value">Full-stack web, developer tooling</span>
+          </div>
+          <div class="fact">
+            <span class="fact__label">Currently</span>
+            <span class="fact__value">Senior Engineer at Company</span>
+          </div>
+          <div class="fact">
+            <span class="fact__label">Open to</span>
+            <span class="fact__value">Full-time roles, selective consulting</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats reveal" style="margin-top: var(--space-7)">
+        <!-- PERSONALIZE: numbers worth bragging about -->
+        <div class="stat">
+          <div class="stat__value">5+</div>
+          <div class="stat__label">Years building software</div>
+        </div>
+        <div class="stat">
+          <div class="stat__value">30+</div>
+          <div class="stat__label">Projects shipped</div>
+        </div>
+        <div class="stat">
+          <div class="stat__value">12</div>
+          <div class="stat__label">Open-source contributions</div>
+        </div>
+        <div class="stat">
+          <div class="stat__value">100%</div>
+          <div class="stat__label">Lighthouse accessibility</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ Skills ══════════════ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <p class="eyebrow">02 — Skills</p>
+          <h2 class="section__title">What I work with</h2>
+          <p class="section__lead">
+            Tools are means, not ends — but here's the kit I reach for most often.
+          </p>
+        </div>
+      </div>
+
+      <div class="skill-groups">
+        <!-- PERSONALIZE: your stack -->
+        <article class="skill-group reveal">
+          <h3 class="skill-group__title">
+            <span class="skill-group__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 4.5h18v13H3zM8 21h8M12 17.5V21"></path>
+              </svg>
+            </span>
+            Front end
+          </h3>
+          <ul class="tags">
+            <li class="tag">TypeScript</li><li class="tag">React</li>
+            <li class="tag">Next.js</li><li class="tag">CSS architecture</li>
+            <li class="tag">Accessibility</li><li class="tag">Web performance</li>
+          </ul>
+        </article>
+
+        <article class="skill-group reveal">
+          <h3 class="skill-group__title">
+            <span class="skill-group__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5.5" rx="8" ry="3"></ellipse>
+                <path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"></path>
+              </svg>
+            </span>
+            Back end &amp; data
+          </h3>
+          <ul class="tags">
+            <li class="tag">Node.js</li><li class="tag">Python</li>
+            <li class="tag">PostgreSQL</li><li class="tag">Redis</li>
+            <li class="tag">REST &amp; GraphQL</li><li class="tag">Event queues</li>
+          </ul>
+        </article>
+
+        <article class="skill-group reveal">
+          <h3 class="skill-group__title">
+            <span class="skill-group__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6.5 18a4.5 4.5 0 0 1-.6-8.96 6 6 0 0 1 11.55-1.4A4.75 4.75 0 0 1 18 18z"></path>
+              </svg>
+            </span>
+            Infrastructure
+          </h3>
+          <ul class="tags">
+            <li class="tag">Docker</li><li class="tag">CI/CD</li>
+            <li class="tag">AWS</li><li class="tag">Terraform</li>
+            <li class="tag">Observability</li><li class="tag">Testing</li>
+          </ul>
+        </article>
+
+        <article class="skill-group reveal">
+          <h3 class="skill-group__title">
+            <span class="skill-group__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-7-4.4-7-9.6A4.4 4.4 0 0 1 12 8a4.4 4.4 0 0 1 7 3.4C19 16.6 12 21 12 21z"></path>
+              </svg>
+            </span>
+            Ways of working
+          </h3>
+          <ul class="tags">
+            <li class="tag">Product thinking</li><li class="tag">Technical writing</li>
+            <li class="tag">Code review</li><li class="tag">Mentoring</li>
+            <li class="tag">Design systems</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ Work ══════════════ -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <p class="eyebrow">03 — Work</p>
+          <h2 class="section__title">Selected projects</h2>
+          <p class="section__lead">
+            A few things I've built. Filter by what interests you.
+          </p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter projects by category">
+          <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" type="button" data-filter="web" aria-pressed="false">Web apps</button>
+          <button class="filter" type="button" data-filter="oss" aria-pressed="false">Open source</button>
+          <button class="filter" type="button" data-filter="design" aria-pressed="false">Design</button>
+        </div>
+      </div>
+
+      <!-- PERSONALIZE: one <article class="project"> per project.
+           data-tags takes any of the filter values above, space separated. -->
+      <div class="projects" id="projects">
+
+        <article class="project reveal" data-tags="web oss">
+          <div class="project__thumb" aria-hidden="true">01</div>
+          <div class="project__body">
+            <h3 class="project__title"><a href="#work">Atlas — analytics dashboard</a></h3>
+            <p class="project__desc">
+              A real-time dashboard that renders a million rows without dropping frames.
+              Virtualised tables, a streaming API and a query planner that pushes work to the database.
+            </p>
+            <ul class="tags">
+              <li class="tag">TypeScript</li><li class="tag">React</li><li class="tag">PostgreSQL</li>
+            </ul>
+            <div class="project__links">
+              <a href="#work" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path>
+                </svg>
+                Live site
+              </a>
+              <a href="#work" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m9 18-6-6 6-6M15 6l6 6-6 6"></path>
+                </svg>
+                Source
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal" data-tags="oss">
+          <div class="project__thumb" aria-hidden="true">02</div>
+          <div class="project__body">
+            <h3 class="project__title"><a href="#work">Ledger — CLI for tracking time</a></h3>
+            <p class="project__desc">
+              A single-binary time tracker with a plain-text data format you can read in
+              twenty years. Zero config, keyboard first, exports to anything.
+            </p>
+            <ul class="tags">
+              <li class="tag">Go</li><li class="tag">SQLite</li><li class="tag">CLI</li>
+            </ul>
+            <div class="project__links">
+              <a href="#work" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m9 18-6-6 6-6M15 6l6 6-6 6"></path>
+                </svg>
+                Source
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal" data-tags="web design">
+          <div class="project__thumb" aria-hidden="true">03</div>
+          <div class="project__body">
+            <h3 class="project__title"><a href="#work">Northwind — design system</a></h3>
+            <p class="project__desc">
+              Forty accessible components, themed with design tokens and documented so
+              designers and engineers argue less. Adopted by six product teams.
+            </p>
+            <ul class="tags">
+              <li class="tag">Design tokens</li><li class="tag">Storybook</li><li class="tag">a11y</li>
+            </ul>
+            <div class="project__links">
+              <a href="#work" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path>
+                </svg>
+                Case study
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal" data-tags="web">
+          <div class="project__thumb" aria-hidden="true">04</div>
+          <div class="project__body">
+            <h3 class="project__title"><a href="#work">Postcard — static site generator</a></h3>
+            <p class="project__desc">
+              Markdown in, a fast site out. Builds a 500-page blog in under two seconds
+              and ships no JavaScript unless a page asks for it.
+            </p>
+            <ul class="tags">
+              <li class="tag">Node.js</li><li class="tag">Markdown</li><li class="tag">Performance</li>
+            </ul>
+            <div class="project__links">
+              <a href="#work" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m9 18-6-6 6-6M15 6l6 6-6 6"></path>
+                </svg>
+                Source
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal" data-tags="design">
+          <div class="project__thumb" aria-hidden="true">05</div>
+          <div class="project__body">
+            <h3 class="project__title"><a href="#work">Field notes — a writing practice</a></h3>
+            <p class="project__desc">
+              Essays on interface design and the craft of shipping. Roughly monthly,
+              always about something I got wrong first.
+            </p>
+            <ul class="tags">
+              <li class="tag">Writing</li><li class="tag">Design</li>
+            </ul>
+            <div class="project__links">
+              <a href="#work" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path>
+                </svg>
+                Read
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal" data-tags="web oss">
+          <div class="project__thumb" aria-hidden="true">06</div>
+          <div class="project__body">
+            <h3 class="project__title"><a href="#work">Kettle — background job runner</a></h3>
+            <p class="project__desc">
+              A small, boring queue built on Postgres. No extra infrastructure, exactly-once
+              semantics, and a dashboard that tells you why a job failed.
+            </p>
+            <ul class="tags">
+              <li class="tag">Python</li><li class="tag">PostgreSQL</li><li class="tag">Queues</li>
+            </ul>
+            <div class="project__links">
+              <a href="#work" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m9 18-6-6 6-6M15 6l6 6-6 6"></path>
+                </svg>
+                Source
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="projects__empty" id="projects-empty" hidden>
+        No projects in this category yet.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════ Experience ══════════════ -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <p class="eyebrow">04 — Experience</p>
+          <h2 class="section__title">Where I've worked</h2>
+        </div>
+      </div>
+
+      <!-- PERSONALIZE: your roles, most recent first -->
+      <div class="timeline">
+        <article class="entry reveal">
+          <div class="entry__head">
+            <h3 class="entry__role">Senior Software Engineer · <span class="entry__org">Company</span></h3>
+            <span class="entry__period">2023 — Present</span>
+          </div>
+          <p class="entry__desc">
+            Lead engineer on the customer-facing platform, working across the stack
+            with a small team.
+          </p>
+          <ul class="entry__points">
+            <li>Cut median page load from 3.1s to 800ms by reworking data fetching and bundling.</li>
+            <li>Designed the component library now used by every product team.</li>
+            <li>Mentor two engineers and run the weekly design review.</li>
+          </ul>
+        </article>
+
+        <article class="entry reveal">
+          <div class="entry__head">
+            <h3 class="entry__role">Software Engineer · <span class="entry__org">Previous Company</span></h3>
+            <span class="entry__period">2021 — 2023</span>
+          </div>
+          <p class="entry__desc">
+            Built internal tooling and the APIs behind it for a team of 200.
+          </p>
+          <ul class="entry__points">
+            <li>Shipped a self-serve reporting tool that removed ~15 hours of manual work a week.</li>
+            <li>Migrated a monolith's billing path to a queue-backed service with no downtime.</li>
+          </ul>
+        </article>
+
+        <article class="entry reveal">
+          <div class="entry__head">
+            <h3 class="entry__role">Junior Developer · <span class="entry__org">First Company</span></h3>
+            <span class="entry__period">2020 — 2021</span>
+          </div>
+          <p class="entry__desc">
+            Where I learned to read other people's code — and to write code others could read.
+          </p>
+        </article>
+
+        <article class="entry reveal">
+          <div class="entry__head">
+            <h3 class="entry__role">BSc Computer Science · <span class="entry__org">University</span></h3>
+            <span class="entry__period">2016 — 2020</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ Contact ══════════════ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <p class="eyebrow">05 — Contact</p>
+          <h2 class="section__title">Let's talk</h2>
+        </div>
+      </div>
+
+      <div class="contact">
+        <div class="contact__cta reveal">
+          <p class="prose">
+            I read everything that arrives and reply to most of it. Whether it's a role,
+            a project, or a question about something I've written — say hello.
+          </p>
+
+          <!-- PERSONALIZE: your real contact details -->
+          <div class="contact__channels">
+            <a class="channel" href="mailto:you@example.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2.5" y="4.5" width="19" height="15" rx="2.5"></rect>
+                <path d="m3 7 9 6 9-6"></path>
+              </svg>
+              <span>
+                <span class="channel__label">Email</span><br>
+                <span class="channel__value">you@example.com</span>
+              </span>
+            </a>
+
+            <a class="channel" href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.76-1.95C20.6 8.75 22 11.1 22 15.1V21h-4v-5.2c0-1.24-.02-2.84-1.9-2.84-1.9 0-2.2 1.35-2.2 2.75V21H9z"/></svg>
+              <span>
+                <span class="channel__label">LinkedIn</span><br>
+                <span class="channel__value">/in/yourhandle</span>
+              </span>
+            </a>
+
+            <a class="channel" href="https://github.com/yourhandle" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.72-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.13-.3-.54-1.53.11-3.18 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.23 0 4.63-2.8 5.65-5.48 5.95.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .5z"/></svg>
+              <span>
+                <span class="channel__label">GitHub</span><br>
+                <span class="channel__value">@yourhandle</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- The form opens the visitor's mail client — no backend needed.
+             PERSONALIZE: to collect submissions instead, sign up with a form
+             service (Formspree, Basin, Netlify Forms) and set:
+               action="https://formspree.io/f/yourid" method="POST"
+             then delete data-mailto below. -->
+        <form class="form reveal" id="contact-form" novalidate
+              data-mailto="you@example.com">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+            <span class="field__error" data-error-for="name" aria-live="polite"></span>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+            <span class="field__error" data-error-for="email" aria-live="polite"></span>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <span class="field__error" data-error-for="message" aria-live="polite"></span>
+          </div>
+
+          <button class="btn btn--primary" type="submit">
+            Send message
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 12h15M13 6l6 6-6 6"></path>
+            </svg>
+          </button>
+          <p class="form__note" id="form-note">
+            This opens your email app with the message ready to send.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══════════════ Footer ══════════════ -->
+<footer class="site-footer">
+  <div class="container footer__inner">
+    <p>© <span id="year">2026</span> Your Name. Built by hand.</p>
+    <nav class="footer__links" aria-label="Footer">
+      <a href="#top">Top</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<button class="icon-btn to-top" id="to-top" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+       stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M12 19V5M6 11l6-6 6 6"></path>
+  </svg>
+</button>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
