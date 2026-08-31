@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# PERSONALIZE: point this at your real domain
+Sitemap: https://example.com/sitemap.xml
