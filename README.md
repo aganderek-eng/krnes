@@ -80,5 +80,15 @@ python3 -m http.server 8000
 **Anywhere else** — Netlify, Vercel, Cloudflare Pages and friends all take this
 repo as-is: no build command, publish directory `.`.
 
+The site publishes to `https://aganderek-eng.github.io/krnes/`.
+
+Because that's a *project* site served from a `/krnes/` subpath rather than the
+domain root, `404.html` prefixes its asset paths with `/krnes/` — GitHub serves
+that one page for any missing URL under the repo, including deep paths, so
+relative paths can't be used there. `index.html` uses relative paths and needs
+no prefix.
+
 **Custom domain** — add a `CNAME` file containing your domain, point the DNS at
-your host, then update the URLs in `index.html`, `robots.txt` and `sitemap.xml`.
+your host, then update the URLs in `index.html`, `robots.txt` and `sitemap.xml`,
+and drop the `/krnes` prefix from the three paths in `404.html` (the site is
+served from the root on a custom domain).

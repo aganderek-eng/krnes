@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-# PERSONALIZE: point this at your real domain
-Sitemap: https://example.com/sitemap.xml
+# Update if you move to a custom domain
+Sitemap: https://aganderek-eng.github.io/krnes/sitemap.xml
